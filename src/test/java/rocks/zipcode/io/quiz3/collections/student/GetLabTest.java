@@ -19,7 +19,7 @@ public class GetLabTest {
         student.forkLab(expected);
 
         // when
-        LabStatus actual = student.getLab(labName);
+        Lab actual = student.getLab(labName);
 
         // then
         Assert.assertEquals(expected, actual);
@@ -34,7 +34,7 @@ public class GetLabTest {
         student.forkLab(expected);
 
         // when
-        LabStatus actual = student.getLab(labName);
+        Lab actual = student.getLab(labName);
 
         // then
         Assert.assertEquals(expected, actual);

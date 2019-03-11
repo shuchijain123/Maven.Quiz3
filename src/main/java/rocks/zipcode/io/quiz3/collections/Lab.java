@@ -4,12 +4,13 @@ package rocks.zipcode.io.quiz3.collections;
  * @author leon on 10/12/2018.
  */
 public class Lab {
-    String labName= "duplicate deleter";
+
+   public String labName="";
 
     public Lab()
     {
 
-        this.labName="duplicate deleter";
+        this.labName=labName;
     }
 
     public Lab(String labName) {
@@ -20,9 +21,7 @@ public class Lab {
     public String getName()
 
     {
-        return labName;
+        return this.labName;
     }
-    public void setName() {
-        this.labName = labName;
-    }
+
 }

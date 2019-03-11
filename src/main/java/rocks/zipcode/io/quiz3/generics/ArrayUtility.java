@@ -59,9 +59,10 @@ public class ArrayUtility<SomeType> {
     {
 
 
-     //SomeType[]  numberArray = Arrays.stream(array).filter(c->predicate)pretoArray(Object[]::new);
+     //SomeType[]  numberArray = Arrays.stream(array).filter(c->predicate.apply()).toArray((Object[]::new);
 
 
                 return null;
+
     }
 }

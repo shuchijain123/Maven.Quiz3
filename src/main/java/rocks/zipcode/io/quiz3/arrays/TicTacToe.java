@@ -25,7 +25,7 @@ public class TicTacToe {
     }
 
     public String[] getColumn(Integer value) {
-        String[] column = new String[board.length]; // Here I assume a rectangular 2D array!
+        String[] column = new String[board.length];
         for(int i=0; i<column.length; i++){
             column[i] = board[i][value];
         }
@@ -39,7 +39,7 @@ public class TicTacToe {
         boolean dup = false;
       String[] row=  getRow(rowIndex);
 
-        for (int i=0;i<row.length;i++){
+        for (int i=0;i<row.length-1;i++){
             for (int j=1;i<row.length-1;i++)
 
             if (row[i] == row[j]);
@@ -58,10 +58,10 @@ public class TicTacToe {
         boolean dup = false;
         String[] row = getColumn(columnIndex);
 
-        for (int i = 0; i < row.length; i++) {
+        for (int i = 0; i < row.length-1; i++) {
             for (int j = 0; i < row.length - 1; i++) {
 
-                if (row[i] == row[j]) ;
+                if (row[i] == "O") ;
 
                 dup = true;
 
@@ -76,10 +76,10 @@ public class TicTacToe {
 
 
 
-        return null;
+        return "O";
     }
 
     public String[][] getBoard() {
-        return null;
+        return this.board;
     }
 }
